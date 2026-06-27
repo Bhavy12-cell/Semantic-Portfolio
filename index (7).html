@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhavya Gupta — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+
+  <!-- Animated background particles -->
+  <div class="bg-glow"></div>
+  <canvas id="particles"></canvas>
+
+  <!-- ─── NAVBAR ─── -->
+  <header id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">BG<span class="dot">.</span></a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section id="home">
+    <div class="hero">
+      <div class="hero-text" data-aos="fade-right">
+        <h1>I'm <span class="accent">Bhavya</span><br/>Gupta</h1>
+        <h2 class="typing-line">
+          <span id="typing"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-sub">
+          Building crisp, modern interfaces that<br/>feel as good as they look.
+        </p>
+        <div class="hero-actions">
+          <a href="Bhavya_s_resume__Copy_ (1).pdf" target="_blank" class="btn-primary">Download Resume</a>
+          <a href="#projects" class="btn-ghost">View Work</a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap" data-aos="fade-left">
+        <div class="photo-ring"></div>
+        <img
+          src="WhatsApp Image 2026-06-05 at 8.48.18 PM.jpeg"
+          alt="Bhavya Gupta"
+          class="hero-pic"
+        />
+        <!-- floating chips -->
+        <div class="chip chip-1">React</div>
+        <div class="chip chip-2">Java</div>
+        <div class="chip chip-3">UI/UX</div>
+        <div class="chip chip-3">Node.js</div>
+        <div class="chip chip-3">Express.js</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about">
+    <div class="section-inner">
+      <span class="section-label">Who I Am</span>
+      <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right">
+          <p>I'm a <strong>Frontend Developer</strong> and <strong>CSE Data Science student</strong> with a passion for crafting beautiful, performant web experiences.</p>
+          <p>I've sharpened my skills through real-world internships at startups, hackathons, and a love for clean code. My toolkit spans HTML/CSS/JS on the frontend, Node.js on the backend, and Java + DSA for problem-solving.</p>
+          <p>Outside the editor, I'm chasing the next hackathon, contributing to open-source, and exploring the intersection of data science and design.</p>
+        </div>
+        <div class="about-stats" data-aos="fade-left">
+          <div class="stat-card">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Years Coding</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Hackathons</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Cups of Coffee</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills">
+    <div class="section-inner">
+      <span class="section-label">What I Know</span>
+      <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="skill-icon">🎨</div>
+          <h3>Frontend</h3>
+          <p>HTML5, CSS3, JavaScript (ES6+)</p>
+          <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="skill-icon">⚙️</div>
+          <h3>Programming</h3>
+          <p>Object-oriented design & DSA</p>
+          <div class="skill-tags"><span>Java</span><span>C++</span></div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="skill-icon">🛠️</div>
+          <h3>Tools</h3>
+          <p>Version control & development environment</p>
+          <div class="skill-tags"><span>Git</span><span>GitHub</span><span>VS Code</span></div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="skill-icon">✦</div>
+          <h3>Design</h3>
+          <p>Wireframing, prototyping & UI systems</p>
+          <div class="skill-tags"><span>Figma</span><span>UI/UX</span></div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="320">
+          <div class="skill-icon">🖥️</div>
+          <h3>Backend</h3>
+          <p>Server-side logic & database management</p>
+          <div class="skill-tags"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>React</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects">
+    <div class="section-inner">
+      <span class="section-label">What I've Built</span>
+      <h2 class="section-title" data-aos="fade-up">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card" data-aos="fade-up">
+          <div class="project-header">
+            <span class="project-icon">🌐</span>
+            <div class="project-links">
+              <a href="#" title="Live Demo">↗</a>
+              <a href="#" title="GitHub">⌥</a>
+            </div>
+          </div>
+          <h3>Project One</h3>
+          <p>A brief description of your project — what it does, the problem it solves, and the impact it had.</p>
+          <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-header">
+            <span class="project-icon">📊</span>
+            <div class="project-links">
+              <a href="#" title="Live Demo">↗</a>
+              <a href="#" title="GitHub">⌥</a>
+            </div>
+          </div>
+          <h3>Project Two</h3>
+          <p>A brief description of your project — what it does, the problem it solves, and the impact it had.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-header">
+            <span class="project-icon">🤖</span>
+            <div class="project-links">
+              <a href="#" title="Live Demo">↗</a>
+              <a href="#" title="GitHub">⌥</a>
+            </div>
+          </div>
+          <h3>Project Three</h3>
+          <p>A brief description of your project — what it does, the problem it solves, and the impact it had.</p>
+          <div class="project-tags"><span>Java</span><span>DSA</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ACHIEVEMENTS ─── -->
+  <section id="achievements">
+    <div class="section-inner">
+      <span class="section-label">Recognition</span>
+      <h2 class="section-title" data-aos="fade-up">Achievements</h2>
+      <div class="achievement-grid">
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="0">
+          <img src="WhatsApp Image 2026-06-07 at 7.21.21 PM.jpeg" alt="Achievement 1" />
+          <div class="achievement-overlay"><span>View</span></div>
+        </div>
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="120">
+          <img src="WhatsApp Image 2026-06-07 at 7.21.46 PM.jpeg" alt="Achievement 2" />
+          <div class="achievement-overlay"><span>View</span></div>
+        </div>
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="240">
+          <img src="WhatsApp Image 2026-06-07 at 7.22.29 PM.jpeg" alt="Achievement 3" />
+          <div class="achievement-overlay"><span>View</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GITHUB STATS ─── -->
+  <section id="github-stats">
+    <div class="section-inner">
+      <span class="section-label">Open Source</span>
+      <h2 class="section-title" data-aos="fade-up">GitHub Stats</h2>
+      <div class="github-grid" data-aos="fade-up">
+        <img src="https://github-readme-stats.vercel.app/api?username=Bhavy12-cell&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="GitHub Stats" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bhavy12-cell&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="Top Languages" />
+        <img src="https://streak-stats.demolab.com?user=Bhavy12-cell&theme=tokyonight&hide_border=true&background=0d1117" alt="GitHub Streak" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <p>Designed & Built by <span class="accent">Bhavya Gupta</span></p>
+    <p class="footer-sub">© 2026 · All rights reserved</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
